@@ -205,7 +205,7 @@ and breadboard.
 
 
 .Arduino Board
-image::ex01_pic01.png[align="center", title-align=center, title="An Ardunio Uno board with Potentiometer connected to port A0. (Image courtesy of arduino.cc)", link=https://www.arduino.cc/en/uploads/Tutorial/if_noLED.png]
+image::pictures/ex01_pic01.png[align="center", title-align=center, title="An Ardunio Uno board with Potentiometer connected to port A0. (Image courtesy of arduino.cc)", link=https://www.arduino.cc/en/uploads/Tutorial/if_noLED.png]
 
 Alternatively you can use SimulIDE to simulate the hardware and the
 Null-modem emulator (com0com) one Windows, to stablish a pair of virtual
@@ -265,7 +265,7 @@ include::ex01.simu[]
 
 Result:
 
-image::ex01_pic02.gif[align="center", title-align=center, title="Live plotting of a potentiometer from Arduino"]
+image::pictures/ex01_pic02.gif[align="center", title-align=center, title="Live plotting of a potentiometer from Arduino"]
 
 == Nomenclature / Glossary:
 
