@@ -1,0 +1,24 @@
+<circuit type="simulide_0.1">
+ 
+Arduino Uno-17: 
+<item itemtype="Arduino" hflip="1" rotation="0" x="-252" valLabRot="0" Mhz="16" valLabely="0" id="Arduino Uno" valLabelx="0" labelrot="0" vflip="1" labely="-21" Ser_Port="true" labelx="54" objectName="Arduino Uno-17" Program="sketch_noDelay_20190228_1/sketch_noDelay_20190228_1.ino.standard.hex" Ser_Monitor="true" Show_id="true" y="-244"/>
+ 
+Potentiometer-15: 
+<item itemtype="Potentiometer" hflip="1" rotation="0" x="4" valLabRot="0" Show_res="true" valLabely="-42" id="Potentiometer-15" valLabelx="-17" labelrot="0" vflip="1" labely="-24" Resistance="10" labelx="0" objectName="Potentiometer-15" Value_Ohm="8380" Show_id="false" y="-252" Unit=" kO"/>
+ 
+Connector-24: 
+<item pointList="4,-236,4,-188,-100,-188" itemtype="Connector" hflip="1" rotation="0" endpinid="Arduino Uno-17-PC0" x="4" valLabRot="0" valLabely="0" id="Connector-24" valLabelx="0" labelrot="0" vflip="1" labely="-24" labelx="0" objectName="Connector-24" startpinid="Potentiometer-15-PinM" Show_id="false" y="-236" enodeid="Circ_eNode-25"/>
+ 
+Connector-26: 
+<item pointList="-12,-252,-12,-164,-100,-164" itemtype="Connector" hflip="1" rotation="0" endpinid="Arduino Uno-17-GND1" x="-12" valLabRot="0" valLabely="0" id="Connector-26" valLabelx="0" labelrot="0" vflip="1" labely="-24" labelx="-16" objectName="Connector-26" startpinid="Potentiometer-15-PinA" Show_id="false" y="-252" enodeid="enode-26"/>
+ 
+Connector-28: 
+<item pointList="20,-252,20,-148,-100,-148" itemtype="Connector" hflip="1" rotation="0" endpinid="Arduino Uno-17-V5V" x="20" valLabRot="0" valLabely="0" id="Connector-28" valLabelx="0" labelrot="0" vflip="1" labely="-24" labelx="-16" objectName="Connector-28" startpinid="Potentiometer-15-PinB" Show_id="false" y="-252" enodeid="enode-28"/>
+ 
+PlotterWidget-56: 
+<item focus="false" frameGeometry="" maximumHeight="200" childrenRegion="" windowFilePath="" autoFillBackground="false" sizePolicy="" palette="" toolTip="" accessibleName="" styleSheet="" layoutDirection="0" minimumSize="" windowIconText="" windowModified="false" rect="" statusTip="" windowOpacity="1" toolTipDuration="-1" acceptDrops="false" updatesEnabled="true" visible="false" isActiveWindow="true" objectName="PlotterWidget-56" itemtype="Plotter" maximumSize="" contextMenuPolicy="1" pos="" cursor="" font="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0" height="200" locale="" geometry="" minimumSizeHint="" whatsThis="" y="791" accessibleDescription="" MaxVolt="500" minimumWidth="200" inputMethodHints="0" x="0" baseSize="" maximized="false" windowIcon="" width="265" childrenRect="" normalGeometry="" MinVolt="0" enabled="true" mouseTracking="false" minimized="false" frameSize="" sizeHint="" fullScreen="false" sizeIncrement="" size="" windowTitle="" maximumWidth="1000" modal="false" focusPolicy="0" windowModality="0" minimumHeight="200"/>
+ 
+SerialPortWidget-57: 
+<item focus="false" frameGeometry="" maximumHeight="170" childrenRegion="" windowFilePath="" autoFillBackground="false" sizePolicy="" palette="" toolTip="" accessibleName="" SettingsProp="COM6,0,3,0,0,0" styleSheet="" layoutDirection="0" minimumSize="" windowIconText="" windowModified="false" rect="" statusTip="" windowOpacity="1" toolTipDuration="-1" acceptDrops="false" updatesEnabled="true" visible="true" isActiveWindow="true" objectName="SerialPortWidget-57" itemtype="SerialPort" maximumSize="" contextMenuPolicy="1" pos="" cursor="" font="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0" height="170" locale="" geometry="" minimumSizeHint="" whatsThis="" y="806" accessibleDescription="" minimumWidth="0" inputMethodHints="0" x="528" baseSize="" maximized="false" windowIcon="" width="450" childrenRect="" normalGeometry="" enabled="true" mouseTracking="false" minimized="false" frameSize="" sizeHint="" fullScreen="false" sizeIncrement="" size="" windowTitle="Settings" maximumWidth="450" modal="false" focusPolicy="0" windowModality="0" minimumHeight="0"/>
+ 
+</circuit>
