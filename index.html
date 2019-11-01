@@ -462,21 +462,21 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sectionbody">
 <div class="paragraph text-justify">
 <p>Scilab Serial Communication Toolbox (SSCT) is inspired by
-<a href="https://github.com/sengupta/Scilab-Serial">a toolbox with a same name</a>
+<a href="https://github.com/sengupta/Scilab-Serial">a toolbox with a similar name</a>
 originally developed by
 <a href="https://www.linkedin.com/in/adityasengupta/">Aditya Sengupta</a> and
 <a href="http://www.weizmann.ac.il/home/fesegre/">Enrico Segre</a>. However,
-<a href="https://github.com/Foadsf/Scilab-Serial">this new development line</a> is an
+<a href="https://github.com/Foadsf/ssct">this new development line</a> is an
 attempt to comply / resemble MATLAB serial communication functionalities
-and syntax, as much as possible. The toolbox adds serial port
-(e.g. RS-232) protocol communication to Scilab / <span class="line-through">Scicoslab</span> platforms,
+and syntax as much as possible. The toolbox adds serial port
+(e.g., RS-232) protocol communication to Scilab / <span class="line-through">Scicoslab</span> platforms,
 which are Free, Libre, and Open Source Software (FLOSS) alternatives of MATLAB.
 The toolbox can be used "for sending commands to control robots, motors,
-or reading sensors such as GPS, laser scanners, compasses, etc" <a href="#Esposito2009">[Esposito2009]</a>.
-For the moment the toolbox only works on Wondows OS,
+or reading sensors such as GPS, laser scanners, compasses, etc." <a href="#Esposito2009">[Esposito2009]</a>.
+For the moment, the toolbox only works on Windows OS,
 but development for Linux and macOS are under progress and hopefully will be added in the future.
-This toolbox is still in early stage prototyping stage and functions are not compiled.
-To use it just download this Gist and run the <code>ssctmain.sci</code> in Scilab.
+This toolbox is still in the early-stage prototyping phase, and functions are not compiled.
+To use it, just download this Gist and run the <code>ssctmain.sci</code> in Scilab.
 For ScicosLab, due to the fact that multiline commenting <code>/* &#8230;&#8203; */</code> is yet to be implemented,
 the AsciiDoc documentations in those tags need to be removed in advance.</p>
 </div>
@@ -485,33 +485,33 @@ the AsciiDoc documentations in those tags need to be removed in advance.</p>
 <a href="https://nl.mathworks.com/help/matlab/matlab_external/property-reference.html">properties
 / attributes</a> and
 <a href="https://nl.mathworks.com/help/matlab/serial-port-devices.html">functions</a>
-of the one in MATLAB has been developed. There are of course some syntax
+of the one in MATLAB has been developed. There are of course, some syntax
 differences due to Scilab intrinsic limitations, not-implemented
 features, as well as extra features considered to improve upon what
-MathWorks has already done. Considering that Scilab doesn’t have
-built-in Serial Port communication, external languages including Tcl,
-PowerShell, CMD / batch, <span class="line-through">bash, C, C++</span> have been used. Moreover, due to the
-lack of object oriented programing (OOP) capability in Scilab there are major
+MathWorks has already done. Considering that Scilab doesn&#8217;t have
+built-in Serial Port communication, external languages, including Tcl,
+PowerShell, CMD / batch, <span class="line-through">bash, C, C++</span>, have been used. Moreover, due to the
+lack of object-oriented programing (OOP) capability in Scilab there are major
 differences between this toolbox and MATLAB. Mainly the serial object
-has no <code>routine</code> / <code>subroutine</code> / <code>procedure</code> accessible through dot <code>.</code>
+has no <code>routine</code> / <code>subroutine</code> / <code>procedure</code> accessible through the dot <code>.</code>
 operator, as seen in the OOP languages. Furthermore, all the MATLAB
 functions starting with an <code>f</code> are changed to <code>s</code> to avoid confusion and
 conflicts with other Scilab functions, as well as possible copyright issues.
-For example MATLAB’s <code>fopen</code> is <code>sopen</code> in this toolbox. The syntax has been changed in a way to be more consistent and concise.</p>
+For example, MATLAB&#8217;s <code>fopen</code> is <code>sopen</code> in this toolbox. The syntax has been changed in a way to be more consistent and concise.</p>
 </div>
 <div class="paragraph text-justify">
 <p>Although there are other FOSS options like Python, Octave, Julia, Sage,
-Maxima, R and FreeMat &#8230;&#8203;, Scilab stands out among these options for having
+Maxima, R and FreeMat, &#8230;&#8203;, Scilab stands out among these options for having
 the great xcos / scicos environment,
 which is a replica of SIMULINK visual programing. xcos / scicos can also
 include code blocks from other languages such as C/C++, Fortran, Scilab,
 and Modelica language. In addition, Scilab / ScicosLab also
-have a nice  GUI building functionality which resembles MATLAB
+have a nice  GUI building functionality that resembles MATLAB
 syntax. In general for users coming from a
-MATLAB background it is one of the best alternatives.</p>
+MATLAB background, it is one of the best alternatives.</p>
 </div>
 <div class="paragraph text-justify">
-<p>The codes / texts copied from other sources have the original licensing if not specified. The text of this author is under Creative Commons License BY-NC-SA and the codes are GPLv3.</p>
+<p>The codes / texts copied from other sources have the original licensing if not specified. The text of this author is under Creative Commons License BY-NC-SA, and the codes are GPLv3. The beautiful logo is designed by Alex Potterson. If you are a FLOSS developer and need a logo, you may <a href="mailto:alexeyrdoxi@gmail.com">contact him</a>.</p>
 </div>
 <div class="imageblock text-center">
 <div class="content">
@@ -1379,7 +1379,7 @@ endfunction
 <p>The <code>SerialPort</code> is a serial port object defined by the <code>serial</code>
 function or a string of a valid serial port such as <code>COM1</code>. The
 <code>Message</code> is a Scilab string which can be a formatted text created by
-Scilab’s <code>msprintf</code> function or a SCPI / SCI command known to the serial
+Scilab&#8217;s <code>msprintf</code> function or a SCPI / SCI command known to the serial
 device.</p>
 </div>
 </div>
@@ -1984,7 +1984,7 @@ do certain things upon receiving certain messages.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2019-10-31 23:33:39 +0100
+Last updated 2019-11-01 23:34:38 +0100
 </div>
 </div>
 </body>
