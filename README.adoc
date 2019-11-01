@@ -18,21 +18,21 @@ image::pictures/ssct_logo.svg[align="center", width=20%]
 
 [.text-justify]
 Scilab Serial Communication Toolbox (SSCT) is inspired by
-https://github.com/sengupta/Scilab-Serial[a toolbox with a same name]
+https://github.com/sengupta/Scilab-Serial[a toolbox with a similar name]
 originally developed by
 https://www.linkedin.com/in/adityasengupta/[Aditya Sengupta] and
 http://www.weizmann.ac.il/home/fesegre/[Enrico Segre]. However,
-https://github.com/Foadsf/Scilab-Serial[this new development line] is an
+https://github.com/Foadsf/ssct[this new development line] is an
 attempt to comply / resemble MATLAB serial communication functionalities
-and syntax, as much as possible. The toolbox adds serial port
-(e.g. RS-232) protocol communication to Scilab / [line-through]#Scicoslab# platforms,
+and syntax as much as possible. The toolbox adds serial port
+(e.g., RS-232) protocol communication to Scilab / [line-through]#Scicoslab# platforms,
 which are Free, Libre, and Open Source Software (FLOSS) alternatives of MATLAB.
 The toolbox can be used "for sending commands to control robots, motors,
-or reading sensors such as GPS, laser scanners, compasses, etc" <<Esposito2009>>.
-For the moment the toolbox only works on Wondows OS,
+or reading sensors such as GPS, laser scanners, compasses, etc." <<Esposito2009>>.
+For the moment, the toolbox only works on Windows OS,
 but development for Linux and macOS are under progress and hopefully will be added in the future.
-This toolbox is still in early stage prototyping stage and functions are not compiled.
-To use it just download this Gist and run the `ssctmain.sci` in Scilab.
+This toolbox is still in the early-stage prototyping phase, and functions are not compiled.
+To use it, just download this Gist and run the `ssctmain.sci` in Scilab.
 For ScicosLab, due to the fact that multiline commenting `/* ... */` is yet to be implemented,
 the AsciiDoc documentations in those tags need to be removed in advance.
 
@@ -41,36 +41,33 @@ A serial object structure with similar
 https://nl.mathworks.com/help/matlab/matlab_external/property-reference.html[properties
 / attributes] and
 https://nl.mathworks.com/help/matlab/serial-port-devices.html[functions]
-of the one in MATLAB has been developed. There are of course some syntax
+of the one in MATLAB has been developed. There are of course, some syntax
 differences due to Scilab intrinsic limitations, not-implemented
 features, as well as extra features considered to improve upon what
-MathWorks has already done. Considering that Scilab doesn’t have
-built-in Serial Port communication, external languages including Tcl,
-PowerShell, CMD / batch, [line-through]#bash, C, C++# have been used. Moreover, due to the
-lack of object oriented programing (OOP) capability in Scilab there are major
+MathWorks has already done. Considering that Scilab doesn't have
+built-in Serial Port communication, external languages, including Tcl,
+PowerShell, CMD / batch, [line-through]#bash, C, C++#, have been used. Moreover, due to the
+lack of object-oriented programing (OOP) capability in Scilab there are major
 differences between this toolbox and MATLAB. Mainly the serial object
-has no `routine` / `subroutine` / `procedure` accessible through dot `.`
+has no `routine` / `subroutine` / `procedure` accessible through the dot `.`
 operator, as seen in the OOP languages. Furthermore, all the MATLAB
 functions starting with an `f` are changed to `s` to avoid confusion and
 conflicts with other Scilab functions, as well as possible copyright issues.
-For example MATLAB’s `fopen` is `sopen` in this toolbox. The syntax has been changed in a way to be more consistent and concise.
+For example, MATLAB's `fopen` is `sopen` in this toolbox. The syntax has been changed in a way to be more consistent and concise.
 
 [.text-justify]
 Although there are other FOSS options like Python, Octave, Julia, Sage,
-Maxima, R and FreeMat ..., Scilab stands out among these options for having
+Maxima, R and FreeMat, ..., Scilab stands out among these options for having
 the great xcos / scicos environment,
 which is a replica of SIMULINK visual programing. xcos / scicos can also
 include code blocks from other languages such as C/C++, Fortran, Scilab,
 and Modelica language. In addition, Scilab / ScicosLab also
-have a nice  GUI building functionality which resembles MATLAB
+have a nice  GUI building functionality that resembles MATLAB
 syntax. In general for users coming from a
-MATLAB background it is one of the best alternatives.
+MATLAB background, it is one of the best alternatives.
 
 [.text-justify]
-The codes / texts copied from other sources have the original licensing if not specified. The text of this author is under Creative Commons License BY-NC-SA and the codes are GPLv3.
-
-
-
+The codes / texts copied from other sources have the original licensing if not specified. The text of this author is under Creative Commons License BY-NC-SA, and the codes are GPLv3. The beautiful logo is designed by Alex Potterson. If you are a FLOSS developer and need a logo, you may mailto:alexeyrdoxi@gmail.com[contact him].
 
 
 image::pictures/Cc-by-nc-sa_icon.png[align="center", width=20%]
@@ -150,7 +147,7 @@ writes text to the serial devoice (similar to the MATLAB fprintf)
 The `SerialPort` is a serial port object defined by the `serial`
 function or a string of a valid serial port such as `COM1`. The
 `Message` is a Scilab string which can be a formatted text created by
-Scilab’s `msprintf` function or a SCPI / SCI command known to the serial
+Scilab's `msprintf` function or a SCPI / SCI command known to the serial
 device.
 
 ==== Example:
