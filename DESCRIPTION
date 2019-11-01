@@ -1,0 +1,29 @@
+Toolbox: SSCT
+
+Title: Scilab Serial Communication Toolbox
+
+Summary: Scilab Serial Communication Toolbox
+Version: 1.0.0
+Author: Foad Sojoodi Farimani
+
+Maintainer: Foad Sojoodi Farimani
+
+Category: Communication
+
+Entity: Foad Sojoodi Farimani
+
+WebSite: https://foadsf.github.io/ssct/
+
+License: GPL 3.0
+
+ScilabVersion: >= 6.0
+
+Depends: 
+
+Date: 2019-11-01
+
+Description: Scilab Serial Communication Toolbox
+
+ Scilab Serial Communication Toolbox (SSCT) is inspired by a toolbox with a same name originally developed by Aditya Sengupta and Enrico Segre.
+ However, this new development line is an attempt to comply / resemble MATLAB® serial communication functionalities and syntax, as much as possible.
+

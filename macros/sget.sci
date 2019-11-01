@@ -1,5 +1,12 @@
+
+////
+/* SSCT GPL v3
+////
+
+// should be defined in SSCT.start 
 Segments = ["all", "line", "char"];
 
+// please use varargin and check input type
 function [OutData, Result] = sget(SerialPort, Segment, Size, Safe, Wait)
 
     OutData = "";

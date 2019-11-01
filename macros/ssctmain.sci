@@ -1,3 +1,11 @@
+
+////
+/* SSCT GPL v3
+////
+
+
+// all global variables should be defined SSCT.start
+
 MainPath = get_absolute_file_path("ssctmain.sci")
 
 

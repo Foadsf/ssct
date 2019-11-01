@@ -1,7 +1,8 @@
 
 ////
-/*
+/* SSCT GPL v3
 ////
+
 
 [.text-center]
 This code is documented in AsciiDoc format
@@ -19,6 +20,9 @@ MATLAB `fopen`)
 [source,scilab]
 ....
 */
+
+// please use varargin and check input type
+
 function [Result, ResultSerialPort, SerialName] = sopen(SerialPort, Access, Reopen)
 /*
 ....

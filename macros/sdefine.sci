@@ -1,5 +1,5 @@
 ////
-/*
+/* SSCT GPL v3
 ////
 
 [.text-center]
