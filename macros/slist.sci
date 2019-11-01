@@ -1,6 +1,8 @@
+
 ////
-/*
+/* SSCT GPL v3
 ////
+
 
 [.text-center]
 This code is documented in AsciiDoc format

@@ -1,0 +1,39 @@
+// SSCT GPL v3
+
+function SSCTlib = startModule()
+
+    TOOLBOX_NAME  = "SSCT";
+    TOOLBOX_TITLE = "Toolbox Skeleton";
+
+  mprintf("Start " + TOOLBOX_TITLE + "\n");
+
+  if isdef("SSCTlib") then
+    warning("SSCT library is already loaded");
+    return;
+  end
+
+  etc_tlbx  = get_absolute_file_path("SSCT.start");
+  etc_tlbx  = getshortpathname(etc_tlbx);
+  root_tlbx = strncpy( etc_tlbx, length(etc_tlbx)-length("\etc\") );
+
+//Load  functions library
+// =============================================================================
+  mprintf("\tLoad macros\n");
+  pathmacros = pathconvert( root_tlbx ) + "macros" + filesep();
+  SSCTlib = lib(pathmacros);
+
+// Load and add help chapter
+// =============================================================================
+  if or(getscilabmode() == ["NW";"STD"]) then
+    mprintf("\tLoad help\n");
+    path_addchapter = pathconvert(root_tlbx+"/jar");
+    if ( isdir(path_addchapter) <> [] ) then
+      add_help_chapter(TOOLBOX_NAME, path_addchapter, %F);
+    end
+  end
+
+
+endfunction
+
+SSCTlib = startModule();
+clear startModule; // remove startModule on stack

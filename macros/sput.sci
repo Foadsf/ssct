@@ -1,3 +1,9 @@
+
+////
+/* SSCT GPL v3
+////
+
+// please use varargin and check input type
 function Result = sput(SerialPort, Message, Segment, Safe, Wait)
     Result = isvalidserialobject(SerialPort, Behaviour = "warning");
     if ~Result then
